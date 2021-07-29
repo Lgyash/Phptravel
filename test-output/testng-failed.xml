@@ -3,13 +3,16 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Tests.Home">
+      <class name="Tests.Pricing">
         <methods>
+          <include name="ClickOnBuyNowOnPackage"/>
+          <include name="ClickOnContactUs"/>
           <include name="Basic"/>
+          <include name="JoinNewsletterWithValidEmail"/>
           <include name="close"/>
-          <include name="ClickOnOverviewDemo"/>
+          <include name="JoinNewsletterWithInvalidEmail"/>
         </methods>
-      </class> <!-- Tests.Home -->
+      </class> <!-- Tests.Pricing -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
